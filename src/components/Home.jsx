@@ -4,17 +4,17 @@ import { Link } from "react-scroll";
 
 export function Home() {
     return (
-        <div name="home"className="h-screen w-full bg-gradient-to-b from-black from-90% via-black to-gray-800 via-10%">
-            <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full md:flex-row px-4">
+        <div name="home"className="w-full bg-gradient-to-b from-black from-90% via-black to-gray-800 via-10%">
+            <div className="h-[calc(140vh-25px)] max-w-screen-lg mx-auto flex flex-col items-center justify-center md:flex-row px-4 sm:h-[calc(100vh-80px)]">
                 <div className="flex flex-col justify-center h-full">
-                    <h2 className="text-6xl sm:text-7xl font-bold text-white">
+                    <h2 className="text-5xl sm:text-7xl font-bold text-white text-center sm:text-left">
                         I`m a Full Stack Developer
                     </h2>
-                    <p className="text-gray-500 py-4 max-w-md">
+                    <p className="text-gray-500 py-4 max-w-md text-center sm:text-left">
                     I`m an UI developer skilled in JavaScript Framework: Vue 3/Vue2, JQuery, HTML, CSS, Vuetify, Vuex, Pinia, Vite, PrimeVue | Advanced knowledge in PHP Framework: Laravel | Knowledge in WordPress
                     </p>
         
-                <div className="flex items-center justify-center sm:justify-start items-start">
+                <div className="flex items-center justify-center sm:justify-start">
                     <Link
                     to="portfolio"
                     smooth
