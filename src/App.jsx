@@ -1,4 +1,5 @@
 import About from './components/About';
+import BackToTopButton from './components/BackToTopButton';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
@@ -18,8 +19,9 @@ function App() {
           <Experience />
           <Contact />
           <Footer />
-        </div>
+          <BackToTopButton />
 
+        </div>
         <SocialLinks />
         </>
       );

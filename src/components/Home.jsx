@@ -1,8 +1,30 @@
 import HeroImage from "../assets/heroImage.jpg"
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(useGSAP);
+
 
 export function Home() {
+
+    useGSAP(() => {
+        //gsap.to(".box", { rotation: "+=360", duration: 3 });
+       
+        const tl = gsap.timeline();
+
+        tl.from("h2", 1.8, {
+        y: 100,
+        ease: "power4.out",
+        delay: 1,
+        skewY: 7,
+        stagger: {
+            amount: 0.3
+        }
+})
+          
+});
+
     return (
         <div name="home"className="w-full bg-gradient-to-b from-black from-90% via-black to-gray-800 via-10%">
             <div className="h-[calc(140vh-25px)] max-w-screen-lg mx-auto flex flex-col items-center justify-center md:flex-row px-4 sm:h-[calc(100vh-80px)]">
