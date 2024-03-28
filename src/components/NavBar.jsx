@@ -30,7 +30,7 @@ export function NavBar() {
     ];
 
   return (
-    <header className="flex justify-between items-center max-w-screen-2xl w-full h-20 px-4 text-white bg-black fixed">
+    <header className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
         <div>
             <img src={logoDB} alt="Logo Darius" className="object-fit h-20"  /> 
         </div>

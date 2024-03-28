@@ -10,7 +10,6 @@ export function Home() {
 
     useGSAP(() => {
         //gsap.to(".box", { rotation: "+=360", duration: 3 });
-       
         const tl = gsap.timeline();
 
         tl.from("h2", 1.8, {
@@ -21,8 +20,7 @@ export function Home() {
         stagger: {
             amount: 0.3
         }
-})
-          
+    })  
 });
 
     return (

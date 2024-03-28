@@ -5,10 +5,9 @@ export function Footer() {
     <div>
       
 
-<footer className="bg-gray-800">
-    <div className="w-full mx-auto max-w-screen-xl p-4">
-      <span className="flex justify-center gap-3 text-sm text-white sm:text-center dark:text-gray-400">© 2024 
-      <a className="hover:underline cursor-pointer">Darius Baciu™</a>
+<footer className="bg-black">
+    <div className="w-full mx-auto max-w-screen-xl p-6">
+      <span className="flex justify-center gap-1 text-sm text-white sm:text-center dark:text-gray-400">Created by<span className="italic">Darius Baciu</span>
     </span>
     </div>
 </footer>
