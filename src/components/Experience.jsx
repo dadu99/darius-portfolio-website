@@ -14,6 +14,7 @@ import vuetify from "../assets/vuetify.svg";
 import vuex from "../assets/vuex.svg"
 import express from "../assets/express.svg";
 import vitejs from "../assets/vitejs.svg";
+import pinia from "../assets/pinia.png"
 
 export function Experience() {
     const techs = [
@@ -42,76 +43,82 @@ export function Experience() {
         style: "shadow-green-500"
     },
     {
-        id: 5,
-        src: reactImage,
-        title: "React",
-        style: "shadow-blue-600",
+      id: 12,
+      src: vuex,
+      title: "Vuex",
+      style: "shadow-green-500",
     },
     {
-        id:6,
-        src: node,
-        title: "Node.js",
-        style: "shadow-green-500"
+      id: 12,
+      src: pinia,
+      title: "Pinia Store",
+      style: "shadow-yellow-500",
     },
     {
-        id:7,
-        src: express,
-        title: "Express.js",
-        style: "shadow-white"
+      id: 11,
+      src: vuetify,
+      title: "Vuetify",
+      style: "shadow-sky-400",
     },
     {
-        id:8,
-        src: laravel,
-        title: "Laravel",
-        style: "shadow-red-500"
+      id: 5,
+      src: reactImage,
+      title: "React",
+      style: "shadow-blue-600",
     },
     {
-        id: 9,
-        src: bootstrap,
-        title: "Bootstrap",
-        style: "shadow-blue-400",
+      id:6,
+      src: node,
+      title: "Node.js",
+      style: "shadow-green-500"
     },
     {
-        id: 10,
-        src: tailwind,
-        title: "Tailwind",
-        style: "shadow-sky-400",
+      id:7,
+      src: express,
+      title: "Express.js",
+      style: "shadow-white"
     },
     {
-        id: 11,
-        src: vuetify,
-        title: "Vuetify",
-        style: "shadow-sky-400",
+      id:8,
+      src: laravel,
+      title: "Laravel",
+      style: "shadow-red-500"
     },
     {
-        id: 12,
-        src: vuex,
-        title: "Vuex",
-        style: "shadow-green-500",
+      id: 9,
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-blue-400",
     },
     {
-        id: 13,
-        src: sql,
-        title: "MySQL",
-        style: "shadow-sky-400",
+      id: 10,
+      src: tailwind,
+      title: "Tailwind",
+      style: "shadow-sky-400",
     },
     {
-        id: 14,
-        src: mongo,
-        title: "MongoDB",
-        style: "shadow-green-400",
+      id: 13,
+      src: sql,
+      title: "MySQL",
+      style: "shadow-sky-400",
     },
     {
-        id: 15,
-        src: github,
-        title: "GitHub",
-        style: "shadow-gray-400",
+      id: 14,
+      src: mongo,
+      title: "MongoDB",
+      style: "shadow-green-400",
     },
     {
-        id: 16,
-        src: vitejs,
-        title: "Vite",
-        style: "shadow-orange-400",
+      id: 15,
+      src: github,
+      title: "GitHub",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 16,
+      src: vitejs,
+      title: "Vite",
+      style: "shadow-orange-400",
     },
     ];
     
@@ -125,10 +132,10 @@ export function Experience() {
               <p className="py-6">These are the technologies I`ve worked with</p>
             </div>
     
-            <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+            <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-1 sm:px-0">
               {techs.map(({ id, src, title, style }) => (
                 <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
-                  <img src={src} alt="" className="w-20 mx-auto cursor-pointer" />
+                  <img src={src} alt="" className="w-40 mx-auto cursor-pointer" />
                   <p className="mt-4 hover:cursor-pointer">{title}</p>
                 </div>
               ))}

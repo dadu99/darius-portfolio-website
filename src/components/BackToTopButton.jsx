@@ -23,7 +23,7 @@ export function BackToTopButton() {
   return (
     <div>
       {backToTopButton && (
-        <button className='fixed bottom-[40px] right-[40px] p-3 bg-gray-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-700 hover:shadow-lg focus:bg-gray-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-800 active:shadow-lg transition duration-150 ease-in-out' 
+        <button className='fixed bottom-[40px] right-[20px] p-3 bg-gray-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-700 hover:shadow-lg focus:bg-gray-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-800 active:shadow-lg transition duration-150 ease-in-out' 
         onClick={scrollUp}>
             <FaArrowCircleUp size={25} />
         </button>

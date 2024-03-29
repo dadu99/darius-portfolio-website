@@ -3,7 +3,12 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
 
   theme: {
-    extend: {},
+    extend: {
+      zIndex: {
+        100: "100",
+        105: "105",
+      },
+    },
   },
   plugins: [],
 };
