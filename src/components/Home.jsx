@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useEffect } from "react";
-import NavBar from "./NavBar";
+import NavBar from "./container/NavBar";
 gsap.registerPlugin(useGSAP);
 
 

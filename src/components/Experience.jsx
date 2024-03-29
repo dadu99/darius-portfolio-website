@@ -43,79 +43,79 @@ export function Experience() {
         style: "shadow-green-500"
     },
     {
-      id: 12,
+      id: 5,
       src: vuex,
       title: "Vuex",
       style: "shadow-green-500",
     },
     {
-      id: 12,
+      id: 6,
       src: pinia,
       title: "Pinia Store",
       style: "shadow-yellow-500",
     },
     {
-      id: 11,
+      id: 7,
       src: vuetify,
       title: "Vuetify",
       style: "shadow-sky-400",
     },
     {
-      id: 5,
+      id: 8,
       src: reactImage,
       title: "React",
       style: "shadow-blue-600",
     },
     {
-      id:6,
+      id: 9,
       src: node,
       title: "Node.js",
       style: "shadow-green-500"
     },
     {
-      id:7,
+      id: 10,
       src: express,
       title: "Express.js",
       style: "shadow-white"
     },
     {
-      id:8,
+      id: 11,
       src: laravel,
       title: "Laravel",
       style: "shadow-red-500"
     },
     {
-      id: 9,
+      id: 12,
       src: bootstrap,
       title: "Bootstrap",
       style: "shadow-blue-400",
     },
     {
-      id: 10,
+      id: 13,
       src: tailwind,
       title: "Tailwind",
       style: "shadow-sky-400",
     },
     {
-      id: 13,
+      id: 14,
       src: sql,
       title: "MySQL",
       style: "shadow-sky-400",
     },
     {
-      id: 14,
+      id: 15,
       src: mongo,
       title: "MongoDB",
       style: "shadow-green-400",
     },
     {
-      id: 15,
+      id: 16,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
     },
     {
-      id: 16,
+      id: 17,
       src: vitejs,
       title: "Vite",
       style: "shadow-orange-400",

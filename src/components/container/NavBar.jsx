@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logoDB from '../assets/dbLogo.jpg'
+import logoDB from '../../assets/dbLogo.jpg'
 import { Link } from "react-scroll";
 
 export function NavBar() {
@@ -37,7 +37,7 @@ export function NavBar() {
 
         <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
-            <li key={id} className="px-4 cursor-pointer capitalize relative z-50 font-medium text-gray-500 hover:scale-105 duration-200">
+            <li key={id} className="px-4 cursor-pointer capitalize relative z-50 font-medium text-gray-500 hover:scale-105 duration-200 hover:underline decoration-teal-500">
                 <Link to={link} smooth duration={500}>
                 {link}
             </Link>

@@ -47,7 +47,7 @@ export function Portfolio() {
         },
       ];
 
-      console.log(portfolios);
+      //console.log(portfolios);
       return (
         <div name="portfolio" className="bg-gradient-to-b from-black to-gray-800 w-full h-full text-white md:h-screen">
           <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
@@ -62,9 +62,9 @@ export function Portfolio() {
     
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:px-12 sm:px-0">
 
-              {portfolios.map((item, index) => (
+              {portfolios.map((item) => (
 
-                    <div key={index.id} className="shadow-md shadow-gray-600 rounded-lg">
+                    <div key={item.id} className="shadow-md shadow-gray-600 rounded-lg">
                       <img src={item.imageProject} alt="portfolio projects"
                           className="cursor-pointer rounded-md duration-200 hover:scale-105"
                       />
