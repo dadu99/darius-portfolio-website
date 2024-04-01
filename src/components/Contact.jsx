@@ -8,14 +8,14 @@ export function Contact() {
               <p className="text-4xl font-bold inline border-b-4 border-gray-500">
                 Contact
               </p>
-              <p className="py-6">Submit the form below to get in touch with me</p>
+              <p className="py-4">Submit the form below to get in touch with me</p>
             </div>
     
             <div className=" flex justify-center items-center">
               <form
                 action="https://getform.io/f/pbnvlnpb"
                 method="POST"
-                className=" flex flex-col w-full md:w-1/2"
+                className="flex flex-col max-w-[600px] w-full"
               >
                 <input
                   type="text"

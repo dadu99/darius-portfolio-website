@@ -49,13 +49,13 @@ export function Portfolio() {
 
       //console.log(portfolios);
       return (
-        <div name="portfolio" className="bg-gradient-to-b from-black to-gray-800 w-full h-full text-white md:h-screen">
-          <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
+        <div name="portfolio" className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen">
+          <div className="max-w-[1000px] p-4 mx-auto flex flex-col justify-center w-full h-full">
             <div className="pb-8 animate-pulse">
                 <p className="text-4xl font-bold inline border-b-4 border-gray-500">
                 Portfolio
                 </p>
-                <p className="py-6">
+                <p className="py-4">
                 Check out some of my work right here
                 </p>
             </div>
@@ -64,13 +64,12 @@ export function Portfolio() {
 
               {portfolios.map((item) => (
 
-                    <div key={item.id} className="shadow-md shadow-gray-600 rounded-lg">
+                    <div key={item.id} className="shadow-lg shadow-[#040c16] group container rounded-lg hover:scale-105 cursor-pointer duration-200">
                       <img src={item.imageProject} alt="portfolio projects"
-                          className="cursor-pointer rounded-md duration-200 hover:scale-105"
+                          className="flex justify-center text-center items-center mx-auto"
                       />
-
                       <div className="group-hover:opacity-100 text-center py-5">
-                            <span className="text-2xl font-light text-white tracking-wider ">
+                            <span className="text-2xl font-light text-white tracking-wider">
                               {item.name}
                             </span>
                       </div>
