@@ -7,6 +7,7 @@ export function Footer() {
         <span className="flex justify-center gap-1 text-sm text-white sm:text-center dark:text-gray-400">
           Created by <span className="italic">Darius Baciu</span>
         </span>
+        
     </div>
   </footer>
   )

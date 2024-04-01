@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logoDB from '../../assets/dbLogo.jpg'
 import { Link } from "react-scroll";
-import $, { event } from "jquery"
+import $ from "jquery"
 
 export function NavBar() {
     const [nav, setNav] = useState(false);
@@ -66,14 +66,14 @@ export function NavBar() {
                 <li
                 key={id}
                 className="px-4 cursor-pointer capitalize py-6 text-4xl">
-            <Link onClick={handleMenuLink}
-                to={link}
-                smooth
-                duration={500}>
-                {link}
-            </Link>
-            </li>
-        ))}
+                    <Link onClick={handleMenuLink}
+                        to={link}
+                        smooth
+                        duration={500}>
+                        {link}
+                    </Link>
+                </li>
+            ))}
         </ul>
     )}
     </header>
