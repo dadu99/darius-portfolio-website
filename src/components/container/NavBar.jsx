@@ -42,20 +42,19 @@ export function NavBar() {
     }
 
   return (
-    <>
-        <header className="flex justify-between items-center z-[100] w-full h-20 px-4 text-white bg-black fixed">
+        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 z-[100] text-white bg-black">
             <div>
                 <img src={logoDB} alt="Logo Darius" className="object-fit relative h-20 z-50"  /> 
             </div>
 
             <ul className="hidden md:flex">
-            {links.map(({ id, link }) => (
-                <li key={id} className="px-4 cursor-pointer capitalize relative z-50 font-medium text-gray-500 hover:scale-105 duration-200 hover:underline decoration-teal-500">
-                    <Link to={link} smooth duration={500}>
-                    {link}
-                </Link>
-                </li>
-            ))}
+                {links.map(({ id, link }) => (
+                    <li key={id} className="px-4 cursor-pointer capitalize relative z-50 font-medium text-gray-500 hover:scale-105 duration-200 hover:underline decoration-teal-500">
+                        <Link to={link} smooth duration={500}>
+                        {link}
+                    </Link>
+                    </li>
+                ))}
             </ul>
 
             <div onClick={handleHamburger}
@@ -100,8 +99,7 @@ export function NavBar() {
                     
                 </ul>
             )}
-        </header>
-    </>
+        </div>
 );
 }
 
