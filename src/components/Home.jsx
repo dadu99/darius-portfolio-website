@@ -4,7 +4,6 @@ import { Link } from "react-scroll";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useEffect } from "react";
-import NavBar from "./container/NavBar";
 gsap.registerPlugin(useGSAP);
 
 
@@ -125,7 +124,7 @@ update();
         });  
 
         const tl = gsap.timeline();  //title animation
-        tl.from("h2", 1.8, {  
+        tl.from("h1", 1.8, {  
         y: 100,
         ease: "power4.out",
         delay: 1,
@@ -137,16 +136,14 @@ update();
 });
 
     return (
-      <> 
-      <div id="hero" className="relative w-full  bg-gradient-to-b from-black from-90% via-black to-gray-800 via-10%">
-        <NavBar />
-      <canvas id="canvas" className="absolute w-full h-screen"/>
-      <div name="home">
-              <div className="h-[calc(140vh-25px)] max-w-screen-lg mx-auto flex flex-col items-center justify-center md:flex-row px-4 sm:h-[calc(100vh-80px)]">
-                <div className="flex flex-col justify-center h-full">
-                    <h2 className="text-5xl sm:text-7xl font-bold text-white text-center sm:text-left z-50">
+      <div id="hero" name="home" className="relative w-full h-screen bg-gradient-to-b from-black from-90% via-black to-gray-800 via-10%">
+        
+        <canvas id="canvas" className="absolute w-full h-screen"/>
+              <div className="max-w-[1000px] px-8 py-8 mx-auto flex flex-col items-center justify-center md:flex-row h-full">
+                <div className="flex flex-col justify-center">
+                    <h1 className="text-5xl sm:text-7xl font-bold text-white text-center sm:text-left z-50">
                         I`m a Full Stack Developer
-                    </h2>
+                    </h1>
                     <p className="text-gray-300 z-60 box-rotation relative py-4 max-w-md text-center sm:text-left z-50">
                     I`m an UI developer skilled in JavaScript Framework: Vue3/Vue2, JQuery, HTML, CSS, Vuetify, Vuex, Pinia, Vite, PrimeVue | Advanced knowledge in PHP Framework: Laravel | Knowledge in WordPress
                     </p>
@@ -168,10 +165,9 @@ update();
                 <div>
                 <img src={HeroImage} alt="My profile picture" className="rounded-2xl relative object-cover object-center w-full pt-6 sm:w-96 z-50"/>
             </div>
-        </div>
+
             </div> 
       </div>
-      </>
     );
 }
 export default Home

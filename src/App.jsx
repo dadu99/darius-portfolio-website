@@ -6,10 +6,12 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import SocialLinks from './components/container/SocialLinks';
+import NavBar from './components/container/NavBar';
 
 function App() {
       return (
-        <>
+        <div>
+          <NavBar />
           <Home />
           <About />
           <Portfolio />
@@ -19,7 +21,7 @@ function App() {
 
           <BackToTopButton />
           <SocialLinks />
-        </>
+        </div>
       );
     }
 
