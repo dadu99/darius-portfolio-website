@@ -12,7 +12,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 function App() {
       return (
         <HelmetProvider>
-           <div>
+        <div>
           <Helmet>
             <title>Baciu Nicolae-Darius</title>
             <meta name="description" content="This is my personal portfolio page" />
@@ -40,7 +40,7 @@ function App() {
               <BackToTopButton />
               <SocialLinks />
             </div>
-    </div>
+      </div>
 
         </HelmetProvider>
       );
