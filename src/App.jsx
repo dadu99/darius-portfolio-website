@@ -7,11 +7,12 @@ import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import SocialLinks from './components/container/SocialLinks';
 import NavBar from './components/container/NavBar';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function App() {
       return (
-        <div>
+        <HelmetProvider>
+           <div>
           <Helmet>
             <title>Baciu Nicolae-Darius</title>
             <meta name="description" content="This is my personal portfolio page" />
@@ -40,6 +41,8 @@ function App() {
               <SocialLinks />
             </div>
     </div>
+
+        </HelmetProvider>
       );
     }
 
