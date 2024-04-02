@@ -49,10 +49,10 @@ export function Portfolio() {
 
       //console.log(portfolios);
       return (
-        <div name="portfolio" className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen">
-          <div className="max-w-[1000px] p-4 mx-auto flex flex-col justify-center w-full h-full">
-            <div className="pb-8 animate-pulse">
-                <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+        <div name="portfolio" className="w-full bg-gradient-to-b from-black to-gray-800 text-white">
+          <div className="max-w-[1000px] px-4 py-8 mx-auto flex flex-col justify-center w-full h-full">
+            <div className="py-4">
+                <p className="text-4xl font-bold inline border-b-4 border-gray-500 animate-pulse">
                 Portfolio
                 </p>
                 <p className="py-4">
@@ -60,14 +60,13 @@ export function Portfolio() {
                 </p>
             </div>
     
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:px-12 sm:px-0">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
 
               {portfolios.map((item) => (
 
-                    <div key={item.id} className="shadow-lg shadow-[#040c16] group container rounded-lg hover:scale-105 cursor-pointer duration-200">
-                      <img src={item.imageProject} alt="portfolio projects"
-                          className="flex justify-center text-center items-center mx-auto"
-                      />
+                    <div key={item.id} className="bg-gray-800 shadow-lg shadow-teal-500 rounded-lg hover:scale-105 cursor-pointer duration-500">
+                        <img src={item.imageProject} alt="portfolio projects darius"
+                          className="flex justify-center text-center items-center mx-auto rounded-lg"/>
                       <div className="group-hover:opacity-100 text-center py-5">
                             <span className="text-2xl font-light text-white tracking-wider">
                               {item.name}

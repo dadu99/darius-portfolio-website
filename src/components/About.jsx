@@ -14,7 +14,7 @@ export function About() {
 
               </div>
               
-              <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
+              <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 py-8'>
                 <div className='sm:text-right text-3xl font-bold'>
                   <p>Hi. I`m Darius, nice to meet you. 
                         <br />   <span className="font-light text-2xl">Please take a look around.</span>

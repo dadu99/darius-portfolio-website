@@ -24,3 +24,6 @@ body {
     opacity: .5;
   }
 }
+.skills-container {
+  height: 70px;
+}
