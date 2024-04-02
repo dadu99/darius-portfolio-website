@@ -136,7 +136,7 @@ update();
 });
 
     return (
-      <div id="hero" name="home" className="relative w-full h-[calc(200vh-25px)] bg-gradient-to-b from-black from-90% via-black to-gray-800 via-10% sm:h-[calc(100vh-80px)]">
+      <div id="hero" name="home" className="relative w-full h-[calc(170vh-25px)] bg-gradient-to-b from-black from-90% via-black to-gray-800 via-10% sm:h-[calc(110vh-80px)]">
         
         <canvas id="canvas" className="absolute w-full"/>
 
