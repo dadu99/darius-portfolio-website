@@ -136,9 +136,10 @@ update();
 });
 
     return (
-      <div id="hero" name="home" className="relative w-full h-screen bg-gradient-to-b from-black from-90% via-black to-gray-800 via-10%">
+      <div id="hero" name="home" className="relative w-full h-[calc(200vh-25px)] bg-gradient-to-b from-black from-90% via-black to-gray-800 via-10% sm:h-[calc(100vh-80px)]">
         
-        <canvas id="canvas" className="absolute w-full h-screen"/>
+        <canvas id="canvas" className="absolute w-full"/>
+
               <div className="max-w-[1000px] px-8 py-8 mx-auto flex flex-col items-center justify-center md:flex-row h-full">
                 <div className="flex flex-col justify-center">
                     <h1 className="text-5xl sm:text-7xl font-bold text-white text-center sm:text-left z-50">
