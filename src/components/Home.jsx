@@ -1,41 +1,44 @@
 import HeroImage from "../assets/heroImage.jpg"
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
-import gsap from "gsap";
+import {gsap, Power2 } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useEffect } from "react";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 
 export function Home() {
     useEffect(() => {
-        
-const canvas = document.getElementById("canvas");
-canvas.width = 320;
-canvas.height = 320;
-const ctx = canvas.getContext("2d");
+      
+      
+    const canvas = document.getElementById("canvas");
+    canvas.width = 320;
+    canvas.height = 320;
+    const ctx = canvas.getContext("2d");
 
-class Vec2 extends Array {
-  
-  constructor (...values) {
-    switch(values.length) {
-      case 2:{
-        const v = values[0];
-        super(v, values[1]);
-        break;
-      }
-      case 1: {
-        const v = values[0];
-        super(v, v);
-        break;
-      }
-      default: {
-        super(2);
-        break;
-      }
-        
-  }
-  }
+  class Vec2 extends Array {
+    
+    constructor (...values) {
+      switch(values.length) {
+        case 2:{
+          const v = values[0];
+          super(v, values[1]);
+          break;
+        }
+        case 1: {
+          const v = values[0];
+          super(v, v);
+          break;
+        }
+        default: {
+          super(2);
+          break;
+        }     
+    }
+    }
   
   get x(){ return this[0]; }
   set x(value) { this[0] = value; }
@@ -114,10 +117,37 @@ const update = () => {
   requestAnimationFrame(update);
 }
 
-update();
+  update()  ;
     })
 
     useGSAP(() => {
+
+          //image animation on home landing
+          let revealContainers = document.querySelectorAll(".reveal");
+
+          revealContainers.forEach((container) => {
+              let image = container.querySelector("img");
+              //console.log(image);
+              let tl = gsap.timeline({
+                scrollTrigger: {
+                  trigger: container,
+                  toggleActions: "restart none none reset"
+                }
+              });
+    
+              tl.set(container, { autoAlpha: 1 });
+              tl.from(container, 1.5, {
+                xPercent: -100,
+                ease: Power2.out
+              });
+              tl.from(image, 1.5, {
+                xPercent: 100,
+                scale: 1.3,
+                delay: -1.5,
+                ease: Power2.out
+              });
+      });
+
         gsap.to(".box-rotation ", {   //animation heading description
           rotation: "+=360", 
           duration: 3 
@@ -163,9 +193,9 @@ update();
                 </div>
                 </div>
     
-                <div>
-                <img src={HeroImage} alt="My profile picture" className="rounded-2xl relative object-cover object-center w-full pt-6 sm:w-96 z-50"/>
-            </div>
+                <div className="reveal">
+                  <img src={HeroImage} alt="My profile picture" className="rounded-2xl relative object-cover object-center w-full pt-6 sm:w-96 z-50"/>
+                </div>
 
             </div> 
       </div>
