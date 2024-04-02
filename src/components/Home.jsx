@@ -127,7 +127,7 @@ const update = () => {
 
           revealContainers.forEach((container) => {
               let image = container.querySelector("img");
-              console.log(image);
+              //console.log(image);
               let tl = gsap.timeline({
                 scrollTrigger: {
                   trigger: container,
@@ -147,7 +147,7 @@ const update = () => {
                 ease: Power2.out
               });
       });
-      
+
         gsap.to(".box-rotation ", {   //animation heading description
           rotation: "+=360", 
           duration: 3 
