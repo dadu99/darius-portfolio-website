@@ -15,6 +15,7 @@ import vuex from "../assets/vuex.svg"
 import express from "../assets/express.svg";
 import vitejs from "../assets/vitejs.svg";
 import pinia from "../assets/pinia.svg"
+import wordpress from "../assets/wp.png";
 
 export function Experience() {
 
@@ -32,82 +33,82 @@ export function Experience() {
         style: "shadow-blue-500",
     },
     {
-        id: 3,
+      id: 3,
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-indigo-400",
+    },
+    {
+        id: 4,
         src: javascript,
         title: "JavaScript",
         style: "shadow-yellow-500",
     },
     {
-        id: 4,
-        src: vue,
-        title: "Vue",
-        style: "shadow-green-500"
-    },
-    {
       id: 5,
-      src: vuex,
-      title: "Vuex",
-      style: "shadow-green-500",
-    },
-    {
-      id: 6,
-      src: pinia,
-      title: "Pinia Store",
-      style: "shadow-yellow-500",
-    },
-    {
-      id: 7,
-      src: vuetify,
-      title: "Vuetify",
-      style: "shadow-sky-400",
-    },
-    {
-      id: 8,
-      src: reactImage,
-      title: "React",
-      style: "shadow-blue-600",
-    },
-    {
-      id: 9,
       src: node,
       title: "Node.js",
       style: "shadow-green-500"
     },
     {
-      id: 10,
+      id: 6,
       src: express,
       title: "Express.js",
       style: "shadow-white"
     },
     {
+      id: 7,
+      src: vue,
+      title: "Vue",
+      style: "shadow-green-500"
+    },
+    {
+      id: 8,
+      src: vuex,
+      title: "Vuex",
+      style: "shadow-green-500",
+    },
+    {
+      id: 9,
+      src: pinia,
+      title: "Pinia Store",
+      style: "shadow-yellow-500",
+    },
+    {
+      id: 10,
+      src: mongo,
+      title: "MongoDB",
+      style: "shadow-green-400",
+    },
+    {
       id: 11,
+      src: reactImage,
+      title: "React",
+      style: "shadow-blue-600",
+    },
+    {
+      id: 12,
+      src: tailwind,
+      title: "Tailwind",
+      style: "shadow-teal-500",
+    },
+    {
+      id: 13,
+      src: wordpress,
+      title: "Wordpress",
+      style: "shadow-blue-500"
+    },
+    {
+      id: 14,
       src: laravel,
       title: "Laravel",
       style: "shadow-red-500"
     },
     {
-      id: 12,
-      src: bootstrap,
-      title: "Bootstrap",
-      style: "shadow-blue-400",
-    },
-    {
-      id: 13,
-      src: tailwind,
-      title: "Tailwind",
-      style: "shadow-sky-400",
-    },
-    {
-      id: 14,
+      id: 15,
       src: sql,
       title: "MySQL",
       style: "shadow-sky-400",
-    },
-    {
-      id: 15,
-      src: mongo,
-      title: "MongoDB",
-      style: "shadow-green-400",
     },
     {
       id: 16,
@@ -117,6 +118,12 @@ export function Experience() {
     },
     {
       id: 17,
+      src: vuetify,
+      title: "Vuetify",
+      style: "shadow-sky-400",
+    },
+    {
+      id: 18,
       src: vitejs,
       title: "Vite",
       style: "shadow-orange-400",
