@@ -49,7 +49,7 @@ export function NavBar() {
 
             <ul className="hidden md:flex">
                 {links.map(({ id, link }) => (
-                    <li key={id} className="px-4 cursor-pointer capitalize relative z-50 font-medium text-gray-500 hover:scale-105 duration-200 hover:underline decoration-teal-500">
+                    <li key={id} className="px-4 cursor-pointer capitalize relative z-50 font-medium text-teal-500 hover:scale-105 duration-300 hover:underline decoration-teal-500">
                         <Link to={link} 
                             smooth={true} 
                             duration={500}>
