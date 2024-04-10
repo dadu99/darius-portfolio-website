@@ -95,9 +95,10 @@ export function Portfolio() {
                 {portfolios.map((item) => (
 
                       <div key={item.id} className="bg-gray-800 shadow-lg shadow-teal-500 rounded-lg hover:scale-105 cursor-pointer duration-500">
-
-                          <img src={item.imageProject} alt="personal portfolio powered by darius baciu"
-                            className="flex justify-center w-full portfolio-image object-cover items-center mx-auto rounded-lg"/>
+                        
+                        <div style={{ backgroundImage: `url(${item.imageProject})` }}
+                            className="group container rounded-md flex justify-center text-center items-center mx-auto content-div">
+                        </div>
 
                         <div className="group-hover:opacity-100 text-center py-5">
                               <span className="text-2xl font-light text-white tracking-wider">
@@ -126,7 +127,6 @@ export function Portfolio() {
                             </button>
                           </a>
                         </div>
-
                   </div>
                 ))}
               </div>
