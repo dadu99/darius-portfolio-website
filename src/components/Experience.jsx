@@ -16,6 +16,7 @@ import express from "../assets/skills/express.svg";
 import vitejs from "../assets/skills/vitejs.svg";
 import pinia from "../assets/skills/pinia.svg"
 import wordpress from "../assets/skills/wp.png";
+import elementor from "../assets/skills/elementor.webp"
 
 export function Experience() {
 
@@ -100,30 +101,36 @@ export function Experience() {
     },
     {
       id: 14,
+      src: elementor,
+      title: "Elementor",
+      style: "shadow-red-500"
+    },
+    {
+      id: 15,
       src: laravel,
       title: "Laravel",
       style: "shadow-red-500"
     },
     {
-      id: 15,
+      id: 16,
       src: sql,
       title: "MySQL",
       style: "shadow-sky-400",
     },
     {
-      id: 16,
+      id: 17,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
     },
     {
-      id: 17,
+      id: 18,
       src: vuetify,
       title: "Vuetify",
       style: "shadow-sky-400",
     },
     {
-      id: 18,
+      id: 19,
       src: vitejs,
       title: "Vite",
       style: "shadow-orange-400",
