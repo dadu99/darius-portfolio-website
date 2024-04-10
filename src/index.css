@@ -27,6 +27,9 @@ body {
 .skills-container {
   height: 70px;
 }
-.portfolio-image {
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
   height: 200px;
 }
