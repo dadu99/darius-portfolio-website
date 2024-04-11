@@ -173,10 +173,11 @@ const update = () => {
               <div className="max-w-[1000px] px-8 py-8 mx-auto flex flex-col items-center justify-center md:flex-row h-full">
                 <div className="flex flex-col justify-center">
                     <h1 className="text-5xl sm:text-7xl font-bold text-white text-center sm:text-left z-50">
-                        I`m a Full Stack Developer
+                        Hi there, I`m Darius Baciu
                     </h1>
                     <p className="text-gray-300 z-60 box-rotation relative py-4 max-w-md text-center sm:text-left z-50">
-                    I`m an UI developer skilled in JavaScript Framework: Vue3/Vue2, JQuery, HTML, CSS, Vuetify, Vuex, Pinia, Vite, PrimeVue | Advanced knowledge in PHP Framework: Laravel | Knowledge in WordPress
+                      I`m a dedicated and passionate Web developer with 3+ years experience
+                      in JavaScript(Vanilla ES6+), Vue, React, PHP, Node.js HTML and CSS/SCSS
                     </p>
         
                 <div className="flex items-center justify-center sm:justify-start z-50">
