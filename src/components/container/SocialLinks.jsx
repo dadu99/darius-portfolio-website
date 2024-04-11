@@ -39,7 +39,7 @@ export function SocialLinks() {
               Resume <BsFillPersonLinesFill size={30} />
             </>
           ),
-          href: "/JS.pdf",
+          href: "/Baciu Nicolae-Darius.pdf",
           style: "rounded-br-md",
           download: true,
         },
