@@ -17,29 +17,20 @@ export function About() {
               <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 py-8'>
                 <div className='sm:text-right text-3xl font-bold'>
                   <p>Hi. I`m Darius, nice to meet you. 
-                        <br />   <span className="font-light text-2xl">Please take a look around.</span>
+                        <br />   
+                        <span className="font-light text-2xl">Please take a look around.</span>
                   </p>
                 </div>
                 <div>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-                        deserunt illum mollitia officiis qui exercitationem perferendis neque
-                        quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-                        iste, totam fugiat recusandae rerum laborum perferendis molestiae
-                        aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-                        ab mollitia voluptatibus, a nostrum eveniet laborum!
+                    ✔️I`m skilled in web development with JavaScript as the main language and frontend frameworks such as Vue.js or React.js. 
+                    Firstly I worked only with frontend technologies including WordPress, then I started learning backend development using Laravel, Node.js or Python/Django frameworks. <br></br>
+                    ✔️ I have advanced knowledge about MySQL, MongoDB databases<br></br>
+                    ✔️ Through my professional experience as web developer I also gained advanced knowledge of JQuery, Vuex, Pinia, Vite, PrimeVue, Tailwind, Bootstrap, Vuetify, Docker, Linux commands<br></br>
+                    ✔️ MSc Advanced Computing Systems and Bachelor`s degree Computer Science<br></br>
+                    ✔️ Enthusiast and ambitious person, who enjoys challenges, 
+                          keen to learn new things and working with best professional people
                     </p>
-
-                <br />
-
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                        pariatur, vel similique sint, nobis aspernatur ut praesentium
-                        explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-                        quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-                        Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-                        magni quo! Eum cupiditate debitis labore.
-                    </p> 
                 </div>
               </div>
           </div>
