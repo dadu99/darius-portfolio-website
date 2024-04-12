@@ -14,18 +14,22 @@ function App() {
         <HelmetProvider>
         <div>
           <Helmet>
+
             <title>Baciu Nicolae-Darius</title>
-            <meta name="description" content="This is my personal portfolio page" />
-            <meta name="keywords" content="darius, darius baciu, dadu, react, meta tags, seo" />
+            <meta name="description" 
+                  content="Welcome to Darius's personal portfolio. Explore a collection of portfolio's work.
+                  Discover Darius's passion for web development" 
+                  data-rh="true" />
+
             <meta name="author" content="Baciu Nicolae-Darius" />
             <meta property="og:title" content="Baciu Nicolae-Darius" key="ogtitle"/> 
             <meta property="og:description" content="This is my personal portfolio page" />
-            <meta property="og:image" content="https://example.com/image.jpg" />
-            <meta property="og:url" content="https://example.com/my-page" />
+            <meta property="og:image" content="./assets/heroImage.jpg" />
+            <meta property="og:url" content="https://www.dariusbaciu.com/" />
             <meta name="twitter:title" content="Baciu Nicolae-Darius" />
-            <meta name="twitter:description" content="Full Stack Developer" />
+            <meta name="twitter:description" content="Web Developer 👨🏻‍💻 | Passionate about tennis 🎾 Formula 1 🏁 Travel 🌍" />
             <meta name="twitter:image" content="https://twitter.com/DariusDarius01/photo" />
-            <meta name="twitter:card" content="summary_large_image" />
+      
           </Helmet>
       
           <div>
