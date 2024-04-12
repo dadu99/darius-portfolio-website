@@ -15,15 +15,13 @@ function App() {
         <div>
           <Helmet>
 
-            <title>Baciu Nicolae-Darius</title>
+            <title>Darius Baciu</title>
             <meta name="description" 
-                  content="Welcome to Darius's personal portfolio. Explore a collection of portfolio's work.
-                  Discover Darius's passion for web development" 
+                  content="Welcome to Darius's personal portfolio. Explore a collection of portfolio's work. Discover Darius's passion for web development" 
                   data-rh="true" />
-
-            <meta name="author" content="Baciu Nicolae-Darius" />
+            <meta name="author" content="Darius Baciu" />
             <meta name="keywords" content="Darius Baciu, darius baciu, dariusbaciu" />
-            <meta property="og:title" content="Baciu Nicolae-Darius" key="ogtitle"/> 
+            <meta property="og:title" content="Darius Baciu" key="ogtitle"/> 
             <meta property="og:description" content="Welcome to Darius's personal portfolio. Explore a collection of portfolio's work" />
             <meta property="og:image" content="./assets/heroImage.jpg" />
             <meta property="og:url" content="https://www.dariusbaciu.com/" />
