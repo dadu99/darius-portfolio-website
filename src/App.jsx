@@ -17,10 +17,8 @@ function App() {
 
             <title>Baciu Nicolae-Darius</title>
             <meta name="description" 
-                  content="Welcome to Darius's personal portfolio. Explore a collection of portfolio's work.
-                  Discover Darius's passion for web development" 
+                  content="Welcome to Darius's personal portfolio. Explore a collection of portfolio's work. Discover Darius's passion for web development" 
                   data-rh="true" />
-
             <meta name="author" content="Baciu Nicolae-Darius" />
             <meta name="keywords" content="Darius Baciu, darius baciu, dariusbaciu" />
             <meta property="og:title" content="Baciu Nicolae-Darius" key="ogtitle"/> 
