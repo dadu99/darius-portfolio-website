@@ -22,8 +22,9 @@ function App() {
                   data-rh="true" />
 
             <meta name="author" content="Baciu Nicolae-Darius" />
+            <meta name="keywords" content="Darius Baciu, darius baciu, dariusbaciu" />
             <meta property="og:title" content="Baciu Nicolae-Darius" key="ogtitle"/> 
-            <meta property="og:description" content="This is my personal portfolio page" />
+            <meta property="og:description" content="Welcome to Darius's personal portfolio. Explore a collection of portfolio's work" />
             <meta property="og:image" content="./assets/heroImage.jpg" />
             <meta property="og:url" content="https://www.dariusbaciu.com/" />
             <meta name="twitter:title" content="Baciu Nicolae-Darius" />
