@@ -60,7 +60,7 @@ export function Portfolio() {
         },
         {
           id: 7,
-          name: "Nike Clone ",
+          name: "Nike Website Clone",
           imageProject: nike,
           shortDescription: 'Developed in React & Tailwind, for better understanding tailwind concepts',
           github:"",
