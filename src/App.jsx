@@ -21,6 +21,8 @@ function App() {
     TagManager.dataLayer({
       dataLayer: {
         event: "pageview",
+        virtualPagePath: "/",
+        
         page: window.location.pathname + window.location.search,
       },
     });

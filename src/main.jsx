@@ -4,7 +4,6 @@ import App from './App.jsx'
 import './index.css'
 import TagManager from 'react-gtm-module'
 
-
 const tagManagerArgs = {
   gtmId: 'GTM-5TPFW82B'
 }
