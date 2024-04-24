@@ -5,12 +5,29 @@ import {gsap, Power2 } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useEffect } from "react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import TagManager from "react-gtm-module";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 
 export function Home() {
+
+
+  function clickEventPortfolio() {
+    console.log('portfolio');
+
+    TagManager.dataLayer({
+      dataLayer: {
+        event: "click_portfolio",
+        id: "",
+        page: window.location.pathname + window.location.search,
+      },
+    });
+
+  }
+
+
     useEffect(() => {
       
       
@@ -185,6 +202,8 @@ const update = () => {
                           to="portfolio"
                           smooth
                           duration={500}
+                          id="id-portfolio" 
+                          onClick={clickEventPortfolio}
                           className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-teal-500 cursor-pointer sm:z-50">
                           View my Portfolio
                             <span className="group-hover:rotate-90 duration-300">
