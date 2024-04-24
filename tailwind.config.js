@@ -8,6 +8,9 @@ export default {
         100: "100",
         105: "105",
       },
+      fontSize: {
+        "2xl": ["24px", "29.26px"],
+      },
     },
   },
   plugins: [],

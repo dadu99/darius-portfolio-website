@@ -44,7 +44,7 @@ export function NavBar() {
   return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 z-[100] text-white bg-black">
             <div>
-                <img src={logoDB} alt="Logo Darius" className="object-fit relative h-20 z-50"  /> 
+                <img src={logoDB} width={80} height={25} alt="logo nav" className="object-fit relative m-0 w-[80px] h-[25px]' z-50"  /> 
             </div>
 
             <ul className="hidden md:flex">
