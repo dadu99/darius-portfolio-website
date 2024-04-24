@@ -182,21 +182,23 @@ const update = () => {
         
                 <div className="flex items-center justify-center sm:justify-start z-50">
                     <Link
-                    to="portfolio"
-                    smooth
-                    duration={500}
-                    className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-teal-500 cursor-pointer sm:z-50">
-                    View my Portfolio
-                    <span className="group-hover:rotate-90 duration-300">
-                        <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
-                    </span>
+                          to="portfolio"
+                          smooth
+                          duration={500}
+                          className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-teal-500 cursor-pointer sm:z-50">
+                          View my Portfolio
+                            <span className="group-hover:rotate-90 duration-300">
+                                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+                            </span>
                     </Link>
                 </div>
                 </div>
     
                 <div className="reveal">
                   <img src={HeroImage} alt="Darius profile picture" 
-                                      className="rounded-2xl relative object-cover object-center w-full pt-6 sm:w-96 z-50"/>
+                                        width={127}
+                                        height={103.34}
+                                        className="rounded-2xl relative object-contain object-center w-full pt-6 sm:w-96 z-50"/>
                 </div>
 
             </div> 

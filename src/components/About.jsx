@@ -29,7 +29,8 @@ export function About() {
                     ✔️ Through my professional experience as web developer I also gained advanced knowledge of JQuery, Vuex, Pinia, Vite, PrimeVue, Tailwind, Bootstrap, Vuetify, Docker, Linux commands<br></br>
                     ✔️ MSc Advanced Computing Systems and Bachelor`s degree Computer Science<br></br>
                     ✔️ Enthusiast and ambitious person, who enjoys challenges, 
-                          keen to learn new things and working with best professional people
+                          keen to learn new things and working with best professional people<br></br>
+                    ✔️  I`m also flexible and easiliy adapting to new technologies and situations, eager to develop my skills further
                     </p>
                 </div>
               </div>

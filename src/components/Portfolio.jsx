@@ -6,6 +6,7 @@ import bookLibrary from "../assets/portfolio/book_library.png"
 import mern from "../assets/portfolio/mern.png"
 import todo from "../assets/portfolio/todo.png"
 import primeVuePinia from "../assets/portfolio/primevuePinia.png"
+import nike from "../assets/portfolio/nike.png"
 
 export function Portfolio() {
     const portfolios = [
@@ -35,7 +36,7 @@ export function Portfolio() {
         },
         {
           id: 4,
-          name: "Management users from library ",
+          name: "Management users from library",
           imageProject: appLaravel,
           shortDescription: 'Developed in Laravel 8',
           github:"https://github.com/dadu99/app_laravel8",
@@ -59,6 +60,14 @@ export function Portfolio() {
         },
         {
           id: 7,
+          name: "Nike Clone ",
+          imageProject: nike,
+          shortDescription: 'Developed in React & Tailwind, for better understanding tailwind concepts',
+          github:"",
+          live:"",
+        },
+        {
+          id: 8,
           name: "To do list",
           imageProject: todo,
           shortDescription: 'Developed in React',
@@ -66,7 +75,7 @@ export function Portfolio() {
           live:"https://todo-react-8b0166.netlify.app/",
         },
         {
-          id: 8,
+          id: 9,
           name: "Fictional University",
           imageProject: university,
           shortDescription: 'Developed in WordPress',

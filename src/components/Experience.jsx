@@ -148,7 +148,10 @@ export function Experience() {
             <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8 px-1 sm:px-0">
               {techs.map(({ id, src, title, style }) => (
                 <div key={id} className={`shadow-md py-2 rounded-lg ${style}`}>
-                  <img src={src} alt="skills logos" className="w-20 mx-auto skills-container" />
+                  <img src={src} 
+                      width={24} height={24} 
+                      alt="skills logos" 
+                      className="w-20 mx-auto skills-container" />
                   <p className="my-4">{title}</p>
                 </div>
               ))}
