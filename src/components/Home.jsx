@@ -13,7 +13,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 export function Home() {
 
-
   function clickEventPortfolio() {
     console.log('portfolio');
 
@@ -24,7 +23,6 @@ export function Home() {
         page: window.location.pathname + window.location.search,
       },
     });
-
   }
 
 
