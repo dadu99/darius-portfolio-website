@@ -33,6 +33,7 @@ export function About() {
 
   let text = new SplitType('#text');
   let characters = document.querySelectorAll('.char');
+  //console.log(characters);
 
   for(var i = 0; i<characters.length; i++) {
     characters[i].classList.add('translate-y-full');
