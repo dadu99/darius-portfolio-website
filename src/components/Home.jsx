@@ -27,8 +27,7 @@ export function Home() {
 
 
     useEffect(() => {
-      
-      
+    
     const canvas = document.getElementById("canvas");
     canvas.width = 320;
     canvas.height = 320;
