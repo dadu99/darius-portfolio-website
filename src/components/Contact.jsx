@@ -8,8 +8,8 @@ export function Contact() {
 
   const [error, setError] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [errorMail, setErrorMail] = useState('');
   
-
   const handleChangeInputName = (event) => {
     const value = event.target.value;
     setInputValueName(value);
@@ -28,6 +28,25 @@ export function Contact() {
     } else {
       setErrorMessage('');
     }
+  };
+
+  const handleValidateEmail = (event) => {
+    const value = event.target.value;
+    console.log('value', value);
+    setEmail(value);
+
+    //console.log(email);
+    if(validateEmail(value)) {
+      setErrorMail('Please enter a valid mail');
+    } else {
+      setErrorMail('');
+    }
+  }
+
+  const validateEmail = (email) => {
+    console.log(email);
+    const pattern = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/
+    return pattern.test(email);
   };
 
 
@@ -61,12 +80,13 @@ export function Contact() {
                 </div>
                 <input
                   type="email"
-                  name="email"
                   value={email}
                   placeholder="Enter your email address"
-                  onChange={(e) => setEmail(e.target.value)} 
+                  onChange={handleValidateEmail} 
                   className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
                 />
+                {errorMail && <p style={{ color: 'red' }}>{errorMail}</p>}
+
                 <textarea
                   name="message"
                   placeholder="Enter your message"
