@@ -88,7 +88,7 @@ export function NavBar() {
                             </a>
                         </li>   
                         <li className="px-2 hover:duration-300 -translate-y-6">
-                            <a href= "/JS.pdf" target="_blank" rel="noreferrer">
+                            <a href= "/Baciu Nicolae-Darius.pdf" target="_blank" rel="noreferrer">
                                 <BsFillPersonLinesFill size={30} />
                             </a>
                         </li> 

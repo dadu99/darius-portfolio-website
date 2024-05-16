@@ -1,4 +1,4 @@
-import SplitType from 'split-type'
+//import SplitType from 'split-type'
 import {gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -26,25 +26,27 @@ export function About() {
 
     useEffect(() => {
       window.addEventListener('scroll', handleScroll);
+
+      //let text = new SplitType('#text');
+      let characters = document.querySelectorAll('.char');
+      //console.log(characters);
+    
+      for(var i = 0; i<characters.length; i++) {
+        characters[i].classList.add('translate-y-full');
+      }
+    
+      gsap.to('.char', {
+        y: 0,
+        stagger: 0.05,
+        delay: 0.02,
+        duration: 0.5,
+      })
       return () => {
         window.removeEventListener('scroll', handleScroll);
       };
     }, []);
 
-  let text = new SplitType('#text');
-  let characters = document.querySelectorAll('.char');
-  //console.log(characters);
-
-  for(var i = 0; i<characters.length; i++) {
-    characters[i].classList.add('translate-y-full');
-  }
-
-  gsap.to('.char', {
-    y: 0,
-    stagger: 0.05,
-    delay: 0.02,
-    duration: 0.5,
-  })
+ 
 
     return (
         <div name='about' className='w-full h-[calc(130vh-25px)] bg-gradient-to-b from-gray-800 to-black text-white sm:h-[calc(110vh-80px)]'>
@@ -68,16 +70,28 @@ export function About() {
                   </p>
                 </div>
                 <div>
-                    <p>
-                    ✔️I`m skilled in web development with JavaScript as the main language and frontend frameworks such as Vue.js or React.js. 
-                    Firstly I worked only with frontend technologies including WordPress, then I started learning backend development using Laravel, Node.js or Python/Django frameworks. <br></br>
-                    ✔️ I have advanced knowledge about MySQL, MongoDB databases<br></br>
-                    ✔️ Through my professional experience as web developer I also gained advanced knowledge of JQuery, Vuex, Pinia, Vite, PrimeVue, Tailwind, Bootstrap, Vuetify, Docker, Linux commands<br></br>
-                    ✔️ MSc Advanced Computing Systems and Bachelor`s degree Computer Science<br></br>
-                    ✔️ Enthusiast and ambitious person, who enjoys challenges, 
-                          keen to learn new things and working with best professional people<br></br>
-                    ✔️  I`m also flexible and easiliy adapting to new technologies and situations, eager to develop my skills further
-                    </p>
+                    <ul>
+                      <li>
+                      ✔️ I`m skilled in web development with JavaScript as the main language and frontend frameworks such as Vue.js or React.js. 
+                          Firstly I worked only with frontend technologies including WordPress, then I started learning backend development using Laravel, Node.js or Python/Django frameworks.
+                      </li>
+                      <li>
+                        ✔️ I have advanced knowledge about MySQL, MongoDB databases
+                      </li>
+                      <li>
+                        ✔️ Through my professional experience as web developer I also gained advanced knowledge of JQuery, Vuex, Pinia, Vite, PrimeVue, Tailwind, Bootstrap, Vuetify, Docker, Linux commands
+                      </li>
+                      <li>
+                      ✔️ MSc Advanced Computing Systems and Bachelor`s degree Computer Science
+                      </li>
+                      <li>
+                      ✔️ Enthusiast and ambitious person, who enjoys challenges, 
+                        keen to learn new things and working with best professional people
+                      </li>
+                      <li>
+                      ✔️  I`m also flexible and easiliy adapting to new technologies and situations, eager to develop my skills further
+                      </li>
+                    </ul>   
                 </div>
               </div>
           </div>
