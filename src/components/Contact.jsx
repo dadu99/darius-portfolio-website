@@ -44,7 +44,7 @@ export function Contact() {
   }
 
   const validateEmail = (email) => {
-    console.log(email);
+    //console.log(email);
     const pattern = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/
     return pattern.test(email);
   };
@@ -53,8 +53,8 @@ export function Contact() {
   const isFormValid = inputValueName.length > 3 && inputValueMessage.length > 10;
 
     return (
-        <div name="contact" className="w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white flex justify-center items-center p-4">
-          <div className="flex flex-col p-4 justify-center max-w-[600px] w-full'">
+        <div className="w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white flex justify-center items-center p-4">
+          <div name="contact" className="flex flex-col p-4 justify-center max-w-[600px] w-full'">
             <div className="py-4">
               <p className="text-4xl font-bold inline border-b-4 border-gray-500 animate-pulse">Contact</p>
               <p className="py-4">Submit the form below to get in touch with me</p>
