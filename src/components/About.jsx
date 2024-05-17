@@ -2,37 +2,42 @@ import SplitType from 'split-type'
 import {gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useSpring } from 'react-spring';
 import { useEffect, useRef, useState } from 'react';
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 export function About() {
-    const [isVisible, setIsVisible] = useState(false);
-    const ref = useRef();
+  const elementRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
   
-    const props = useSpring({
-      opacity: isVisible ? 1 : 0,
-      transform: isVisible ? 'translateY(0)' : 'translateY(50px)',
-    });
-  
-    const handleScroll = () => {
-      const element = ref.current;
-      const top = element.getBoundingClientRect().top;
-      const isVisible = top < window.innerHeight;
-      setIsVisible(isVisible);
+    useEffect(() => {
+      const handleScroll = () => {
+        if (elementRef.current) {
+          const rect = elementRef.current.getBoundingClientRect();
+          const isVisible = (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+          setIsVisible(isVisible);
+        }
     };
 
-    useEffect(() => {
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
+    window.addEventListener('scroll', handleScroll);
+    // Initial check on component mount
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
     
     let text = new SplitType('#text');
+    console.log(text);
     let characters = document.querySelectorAll('.char');
     //console.log(characters);
   
@@ -62,8 +67,8 @@ export function About() {
               </div>
               
               <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 py-8'>
-                <div ref={ref} className='sm:text-right text-3xl font-bold'>
-                  <p id="text" style={props}>Hi. I`m Darius, nice to meet you. 
+                <div  ref={elementRef} className='sm:text-right text-3xl font-bold'>
+                  <p id="text">Hi. I`m Darius, nice to meet you. 
                         <br />   
                         <span className="font-light text-2xl">Please take a look around.</span>
                   </p>

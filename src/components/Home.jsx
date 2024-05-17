@@ -3,7 +3,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import {gsap, Power2 } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import TagManager from "react-gtm-module";
 
@@ -12,6 +12,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 export function Home() {
+  const elementRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
 
   function clickEventPortfolio() {
     console.log('portfolio');
@@ -25,9 +27,28 @@ export function Home() {
     });
   }
 
-
     useEffect(() => {
     
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsVisible(entry.isIntersecting && entry.intersectionRatio === 1);
+        },
+        {
+          root: null, // viewport
+          threshold: 1.0, // full visibility
+        }
+      );
+
+        if (elementRef.current) {
+          observer.observe(elementRef.current);
+        }
+
+        if (elementRef.current) {
+          observer.unobserve(elementRef.current);
+        }
+      
+
+  
     const canvas = document.getElementById("canvas");
     canvas.width = 320;
     canvas.height = 320;
@@ -74,7 +95,7 @@ export function Home() {
   }
 }
 
-class Particle {
+  class Particle {
   
   constructor() {
     this.speed = new Vec2(Math.random(), Math.random());
@@ -111,11 +132,11 @@ const update = () => {
       const distance = particles[i].position.distance(particles[j].position);
       if (distance < MAX_DISTANCE) {
           
-         ctx.strokeStyle = `rgba(3,233,210, ${1 - distance/MAX_DISTANCE})`;
-         ctx.beginPath();
-         ctx.moveTo(...particles[i].position);
-         ctx.lineTo(...particles[j].position);
-         ctx.stroke();
+        ctx.strokeStyle = `rgba(3,233,210, ${1 - distance/MAX_DISTANCE})`;
+        ctx.beginPath();
+        ctx.moveTo(...particles[i].position);
+        ctx.lineTo(...particles[j].position);
+        ctx.stroke();
       }
     }
     
@@ -131,7 +152,7 @@ const update = () => {
   requestAnimationFrame(update);
 }
 
-  update()  ;
+  update();
     })
 
     useGSAP(() => {
@@ -210,7 +231,7 @@ const update = () => {
                 </div>
                 </div>
     
-                <div className="reveal">
+                <div className="reveal" ref={elementRef}>
                   <img src={HeroImage} alt="Darius profile picture" 
                                         width={127}
                                         height={103.34}
