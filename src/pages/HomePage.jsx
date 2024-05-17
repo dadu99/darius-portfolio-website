@@ -16,7 +16,7 @@ export function HomePage() {
         <div>
          <Helmet>
 
-            <title>Darius Baciu - Web Developer</title>
+            <title>Darius Baciu</title>
             <meta name="description" 
                 content="Welcome to Darius's personal portfolio. Explore a collection of portfolio's work. Discover Darius's passion for web development" 
                 data-rh="true" />
