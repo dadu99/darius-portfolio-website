@@ -1,4 +1,4 @@
-//import SplitType from 'split-type'
+import SplitType from 'split-type'
 import {gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -26,27 +26,26 @@ export function About() {
 
     useEffect(() => {
       window.addEventListener('scroll', handleScroll);
-
-      //let text = new SplitType('#text');
-      let characters = document.querySelectorAll('.char');
-      //console.log(characters);
-    
-      for(var i = 0; i<characters.length; i++) {
-        characters[i].classList.add('translate-y-full');
-      }
-    
-      gsap.to('.char', {
-        y: 0,
-        stagger: 0.05,
-        delay: 0.02,
-        duration: 0.5,
-      })
       return () => {
         window.removeEventListener('scroll', handleScroll);
       };
     }, []);
 
- 
+    
+    let text = new SplitType('#text');
+    let characters = document.querySelectorAll('.char');
+    //console.log(characters);
+  
+    for(var i = 0; i<characters.length; i++) {
+      characters[i].classList.add('translate-y-full');
+    }
+  
+    gsap.to('.char', {
+      y: 0,
+      stagger: 0.05,
+      delay: 0.02,
+      duration: 0.5,
+    })
 
     return (
         <div name='about' className='w-full h-[calc(130vh-25px)] bg-gradient-to-b from-gray-800 to-black text-white sm:h-[calc(110vh-80px)]'>

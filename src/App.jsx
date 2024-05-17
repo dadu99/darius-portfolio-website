@@ -17,12 +17,13 @@ function App() {
 
   useEffect(() => {
 
+    window.history.scrollRestoration = 'manual';  //scroll to top on page refresh 
+
     //Trigger the first pageview manually
     TagManager.dataLayer({
       dataLayer: {
         event: "pageview",
         virtualPagePath: "/",
-        
         page: window.location.pathname + window.location.search,
       },
     });
@@ -36,4 +37,4 @@ function App() {
       );
     }
 
-export default App
+export default Appchanges

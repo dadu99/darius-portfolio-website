@@ -8,21 +8,15 @@ import Portfolio from '../components/Portfolio';
 import SocialLinks from '../components/container/SocialLinks';
 import NavBar from '../components/container/NavBar';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { useEffect } from 'react';
-
 
 export function HomePage() {
-    useEffect(() => {
-        window.history.scrollRestoration = 'manual';  //scroll to top on page refresh 
-    }, []);
-
   return (
     <>
         <HelmetProvider>
         <div>
          <Helmet>
 
-            <title>Darius Baciu - Web Developer</title>
+            <title>Darius Baciu</title>
             <meta name="description" 
                 content="Welcome to Darius's personal portfolio. Explore a collection of portfolio's work. Discover Darius's passion for web development" 
                 data-rh="true" />
