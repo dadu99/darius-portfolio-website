@@ -12,41 +12,41 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 export function HomePage() {
   return (
     <>
-        <HelmetProvider>
+      <HelmetProvider>
         <div>
-         <Helmet>
+          <Helmet>
 
             <title>Darius Baciu</title>
-            <meta name="description" 
-                content="Welcome to Darius's personal portfolio. Explore a collection of portfolio's work. Discover Darius's passion for web development" 
-                data-rh="true" />
+            <meta name="description"
+              content="Welcome to Darius's personal portfolio. Explore a collection of portfolio's work. Discover Darius's passion for web development"
+              data-rh="true" />
             <meta name="author" content="Darius Baciu" />
-            <meta name="keywords" content="Darius Baciu, darius baciu, dariusbaciu" />
-            <meta property="og:title" content="Darius Baciu" key="ogtitle"/> 
+            <meta name="keywords" content="Darius Baciu, darius baciu, dariusbaciu darius baciu web developer" />
+            <meta property="og:title" content="Darius Baciu" key="ogtitle" />
             <meta property="og:description" content="Welcome to Darius's personal portfolio. Explore a collection of portfolio's work" />
             <meta property="og:image" content="./assets/heroImage.jpg" />
             <meta property="og:url" content="https://www.dariusbaciu.com/" />
             <meta name="twitter:title" content="Baciu Nicolae-Darius" />
             <meta name="twitter:description" content="Web Developer 👨🏻‍💻 | Passionate about tennis 🎾 Formula 1 🏁 Travel 🌍" />
             <meta name="twitter:image" content="https://twitter.com/DariusDarius01/photo" />
-      
-        </Helmet>
-      
+
+          </Helmet>
+
           <div>
-              <NavBar />
-              <Home />
-              <About />
-              <Portfolio />
-              <Experience />
-              <Contact />
-              <Footer />
+            <NavBar />
+            <Home />
+            <About />
+            <Portfolio />
+            <Experience />
+            <Contact />
+            <Footer />
 
-              <BackToTopButton />
-              <SocialLinks />
-            </div>
-      </div>
+            <BackToTopButton />
+            <SocialLinks />
+          </div>
+        </div>
 
-        </HelmetProvider>
+      </HelmetProvider>
     </>
   )
 }
