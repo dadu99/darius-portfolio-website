@@ -160,7 +160,7 @@ export function Home() {
 
       <canvas id="canvas" className="absolute w-full" />
 
-      <div className="max-w-[1000px] px-8 py-8 mx-auto flex flex-col-reverse items-center justify-center md:flex-row h-full gap-3 md:px-14">
+      <div className="max-w-[1000px] px-8 py-8 mx-auto flex flex-col-reverse items-center justify-center md:flex-row h-full gap-8 md:px-14">
         <div className="flex flex-col justify-center">
 
           <h1 className="text-5xl sm:text-7xl font-bold text-white text-center z-50 hidden md:block">
