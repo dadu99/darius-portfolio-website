@@ -1,7 +1,7 @@
-import { 
-  Route, 
-  createBrowserRouter, 
-  createRoutesFromElements, 
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
   RouterProvider,
 } from 'react-router-dom'
 import HomePage from './pages/HomePage';
@@ -10,7 +10,7 @@ import { useEffect } from "react"
 
 
 const router = createBrowserRouter(
-  createRoutesFromElements(<Route index element={ <HomePage />} />)
+  createRoutesFromElements(<Route index element={<HomePage />} />)
 );
 
 function App() {
@@ -30,11 +30,11 @@ function App() {
 
   }, []);
 
-      return (
-        <>
-        <RouterProvider router={router} />
-        </>
-      );
-    }
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
+}
 
 export default App

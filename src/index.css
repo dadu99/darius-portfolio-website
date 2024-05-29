@@ -7,9 +7,10 @@
 
 @layer base {
   html {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Jost', sans-serif;
   }
 }
+
 body {
   box-sizing: content-box;
   margin: 0;
@@ -17,16 +18,21 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: .5;
   }
 }
+
 .skills-container {
   height: 70px;
 }
+
 .content-div {
   background-repeat: no-repeat;
   background-size: cover;
