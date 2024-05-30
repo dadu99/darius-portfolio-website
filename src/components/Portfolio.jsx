@@ -37,7 +37,7 @@ export function Portfolio() {
     },
     {
       id: 4,
-      name: "Promptopia AI",
+      name: "Promptopia AI tool",
       imageProject: promptopia,
       shortDescription: 'Modern fullstack developed in Next.js/MongoDB/Tailwind ',
       github: "https://github.com/dadu99/app_next_ai",
