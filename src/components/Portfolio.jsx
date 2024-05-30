@@ -37,7 +37,7 @@ export function Portfolio() {
     },
     {
       id: 4,
-      name: "Promptopia AI",
+      name: "Promptopia AI tool",
       imageProject: promptopia,
       shortDescription: 'Modern fullstack developed in Next.js/MongoDB/Tailwind ',
       github: "https://github.com/dadu99/app_next_ai",
@@ -64,8 +64,8 @@ export function Portfolio() {
       name: "Nike Website Clone",
       imageProject: nike,
       shortDescription: 'Developed in React & Tailwind, for better understanding tailwind concepts',
-      github: "",
-      live: "",
+      github: "https://github.com/dadu99/nike-clone",
+      live: "https://nike-clone-dev.netlify.app/",
     },
     {
       id: 8,
