@@ -136,12 +136,12 @@ export function Home() {
 
   useGSAP(() => {
 
-    /*
-    gsap.to(".box-rotation ", {   //animation heading description with .box-rotation
+
+    gsap.to(".box-rotation ", {   //animation heading description with by class .box-rotation
       rotation: "+=360",
       duration: 3
     });
-    */
+
 
     const tl = gsap.timeline();  //title animation
     tl.from("h1", 1.8, {
@@ -167,7 +167,7 @@ export function Home() {
             Hello, I`m <br></br><span>Darius Baciu</span>
           </h1>
 
-          <p className="text-gray-300 z-60 relative py-4 max-w-md text-center sm:z-50">
+          <p className="text-gray-300 box-rotation z-60 relative py-4 max-w-md text-center sm:z-50">
             I`m a dedicated and passionate Web developer with 3+ years experience
             in JavaScript(Vanilla ES6+), Vue, React, PHP, Node.js, HTML and CSS/SCSS
           </p>
