@@ -39,3 +39,10 @@ body {
   background-position: top;
   height: 200px;
 }
+
+
+@media screen and (max-width: 550px) {
+  .title-glow {
+    color: #ffff;
+  }
+}
