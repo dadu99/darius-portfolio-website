@@ -136,16 +136,16 @@ export function Home() {
 
   useGSAP(() => {
 
-    /*
-    gsap.to(".box-rotation ", {   //animation heading description with .box-rotation
+
+    gsap.to(".box-rotation ", {   //animation heading description with by class .box-rotation
       rotation: "+=360",
       duration: 3
     });
-    */
+
 
     const tl = gsap.timeline();  //title animation
     tl.from("h1", 1.8, {
-      y: 100,
+      y: 150,
       ease: "power4.out",
       delay: 1,
       skewY: 7,
@@ -164,10 +164,10 @@ export function Home() {
         <div className="flex flex-col justify-center">
 
           <h1 className="text-5xl sm:text-7xl font-bold text-white text-center z-50 hidden md:block">
-            Hello, I`m <br></br>Darius Baciu
+            Hello, I`m <br></br><span>Darius Baciu</span>
           </h1>
 
-          <p className="text-gray-300 z-60 relative py-4 max-w-md text-center sm:z-50">
+          <p className="text-gray-300 box-rotation z-60 relative py-4 max-w-md text-center sm:z-50">
             I`m a dedicated and passionate Web developer with 3+ years experience
             in JavaScript(Vanilla ES6+), Vue, React, PHP, Node.js, HTML and CSS/SCSS
           </p>
@@ -190,7 +190,7 @@ export function Home() {
 
         <div className="order-1 xl:order-none xl:mb-0">
           <h1 className="text-5xl sm:text-7xl font-bold bg-gradient-to-r from-cyan-500 to-teal-500 text-transparent bg-clip-text text-center z-50 pt-6 md:hidden">
-            Hello, I`m Darius Baciu
+            Hello, I`m <span className="title-glow">Darius Baciu</span>
           </h1>
           <Image />
         </div>
