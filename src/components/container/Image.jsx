@@ -8,12 +8,12 @@ const Image = () => {
         <motion.div initial={{ opacity: 0 }}
             animate={{
                 opacity: 1,
-                transition: { delay: 2, duration: 0.4, ease: "easeIn" },
+                transition: { delay: 1, duration: 0.6, ease: "easeIn" },
             }}
         >
             <motion.div initial={{ opacity: 0 }}
                 animate={{
-                    opacity: 1, transition: { delay: 2, duration: 0.4, ease: "easeInOut" },
+                    opacity: 1, transition: { delay: 1, duration: 0.6, ease: "easeInOut" },
                 }}>
                 <img src={HeroImage}
                     alt="Darius profile picture"
