@@ -1,21 +1,20 @@
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect } from 'react';
 
-gsap.registerPlugin(useGSAP);
-gsap.registerPlugin(ScrollTrigger);
+import { motion } from "framer-motion"
+import { FadeRight } from '../components/container/animation';
+import { FadeLeft } from '../components/container/animation';
 
 export function About() {
-
-  useEffect(() => {
-
-  }, []);
 
   return (
     <div name='about' id='about' className='w-full h-[calc(130vh-25px)] bg-gradient-to-b from-gray-800 to-black text-white sm:h-[calc(110vh-80px)]'>
       <div className='flex flex-col justify-center items-center w-full h-full'>
-        <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
+
+        <motion.div
+          variants={FadeRight(0.6)}
+          initial="hidden"
+          whileInView="visible"
+          className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
+
           <div className='sm:text-right pb-8 pl-4'>
             <p className='text-4xl font-bold inline border-b-4 border-gray-500 animate-pulse'>
               About
@@ -23,17 +22,24 @@ export function About() {
           </div>
 
           <div></div>
-
-        </div>
+        </motion.div>
 
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 py-8'>
-          <div className='sm:text-right text-3xl font-bold'>
+          <motion.div
+            variants={FadeRight(0.6)}
+            initial="hidden"
+            whileInView="visible"
+            className='sm:text-right text-3xl font-bold'>
             <p id="text">Hi. I`m Darius, nice to meet you.
               <br />
               <span className="font-light text-2xl">Please take a look around.</span>
             </p>
-          </div>
-          <div>
+          </motion.div>
+
+          <motion.div
+            variants={FadeLeft(0.6)}
+            initial="hidden"
+            whileInView="visible">
             <ul>
               <li>
                 ✔️ I`m skilled in web development with JavaScript as the main language and frontend frameworks such as Vue.js or React.js.
@@ -56,7 +62,7 @@ export function About() {
                 ✔️  I`m also flexible and easiliy adapting to new technologies and situations, eager to develop my skills further
               </li>
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
