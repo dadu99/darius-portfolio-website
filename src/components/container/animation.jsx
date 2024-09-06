@@ -21,7 +21,7 @@ export const FadeLeft = (delay) => {
     return {
         hidden: {
             opacity: 0,
-            x: 100,
+            x: 50,
         },
         visible: {
             opacity: 1,
@@ -38,7 +38,7 @@ export const FadeRight = (delay) => {
     return {
         hidden: {
             opacity: 0,
-            x: -100,
+            x: -50,
         },
         visible: {
             opacity: 1,

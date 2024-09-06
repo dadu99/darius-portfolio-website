@@ -1,7 +1,6 @@
 
 import { motion } from "framer-motion"
-import { FadeRight } from '../components/container/animation';
-import { FadeLeft } from '../components/container/animation';
+import { FadeUp } from '../components/container/animation';
 
 export function About() {
 
@@ -10,7 +9,7 @@ export function About() {
       <div className='flex flex-col justify-center items-center w-full h-full'>
 
         <motion.div
-          variants={FadeRight(0.6)}
+          variants={FadeUp(0.6)}
           initial="hidden"
           whileInView="visible"
           className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
@@ -26,7 +25,7 @@ export function About() {
 
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 py-8'>
           <motion.div
-            variants={FadeRight(0.6)}
+            variants={FadeUp(0.6)}
             initial="hidden"
             whileInView="visible"
             className='sm:text-right text-3xl font-bold'>
@@ -37,7 +36,7 @@ export function About() {
           </motion.div>
 
           <motion.div
-            variants={FadeLeft(0.6)}
+            variants={FadeUp(0.6)}
             initial="hidden"
             whileInView="visible">
             <ul>

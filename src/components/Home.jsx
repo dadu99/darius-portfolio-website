@@ -174,8 +174,7 @@ export function Home() {
           className="order-1 xl:order-none xl:mb-0">
           <h1
             className="text-5xl sm:text-7xl font-bold bg-gradient-to-r from-cyan-500 to-teal-500 text-transparent bg-clip-text text-center z-50 pt-6 md:hidden">
-            Hello, I`m
-            Darius Baciu
+            Hello, I`m <span className="title-glow">Darius Baciu</span>
           </h1>
           <Image />
         </motion.div>

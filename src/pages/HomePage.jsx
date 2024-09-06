@@ -34,6 +34,7 @@ export function HomePage() {
 
           <div>
             <NavBar />
+
             <Home />
             <About />
             <Portfolio />
