@@ -126,7 +126,6 @@ export function Home() {
       }
       requestAnimationFrame(update);
     }
-
     update();
   })
 
