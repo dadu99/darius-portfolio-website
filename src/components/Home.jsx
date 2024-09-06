@@ -1,16 +1,12 @@
 
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
 import { useEffect } from "react";
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import TagManager from "react-gtm-module";
 import Image from "../components/container/Image";
-
-gsap.registerPlugin(useGSAP);
-gsap.registerPlugin(ScrollTrigger);
-
+import { motion } from "framer-motion"
+import { FadeUp } from '../components/container/animation';
+//import { FadeLeft } from '../components/container/animation';
 
 export function Home() {
 
@@ -134,40 +130,23 @@ export function Home() {
     update();
   })
 
-  useGSAP(() => {
-
-
-    gsap.to(".box-rotation ", {   //animation heading description with by class .box-rotation
-      rotation: "+=360",
-      duration: 3
-    });
-
-
-    const tl = gsap.timeline();  //title animation
-    tl.from("h1", 1.8, {
-      y: 150,
-      ease: "power4.out",
-      delay: 1,
-      skewY: 7,
-      stagger: {
-        amount: 0.3
-      }
-    })
-  });
-
   return (
     <div id="hero" name="home" className="relative w-full h-[calc(177vh-25px)] bg-gradient-to-b from-black from-90% via-black to-gray-800 via-10% sm:h-[calc(110vh-80px)]">
 
       <canvas id="canvas" className="absolute w-full" />
 
       <div className="max-w-[1000px] px-8 py-8 mx-auto flex flex-col-reverse items-center justify-center md:flex-row h-full gap-8 md:px-14">
-        <div className="flex flex-col justify-center">
+        <motion.div
+          variants={FadeUp(0.6)}
+          initial="hidden"
+          whileInView="visible"
+          className="flex flex-col justify-center">
 
           <h1 className="text-5xl sm:text-7xl font-bold text-white text-center z-50 hidden md:block">
             Hello, I`m <br></br><span>Darius Baciu</span>
           </h1>
 
-          <p className="text-gray-300 box-rotation z-60 relative py-4 max-w-md text-center sm:z-50">
+          <p className="text-gray-300 z-60 relative py-4 max-w-md text-center sm:z-50">
             I`m a dedicated and passionate Web developer with 3+ years experience
             in JavaScript(Vanilla ES6+), Vue, React, PHP, Node.js, HTML and CSS/SCSS
           </p>
@@ -186,14 +165,20 @@ export function Home() {
               </span>
             </Link>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="order-1 xl:order-none xl:mb-0">
-          <h1 className="text-5xl sm:text-7xl font-bold bg-gradient-to-r from-cyan-500 to-teal-500 text-transparent bg-clip-text text-center z-50 pt-6 md:hidden">
-            Hello, I`m <span className="title-glow">Darius Baciu</span>
+        <motion.div
+          variants={FadeUp(0.6)}
+          initial="hidden"
+          whileInView="visible"
+          className="order-1 xl:order-none xl:mb-0">
+          <h1
+            className="text-5xl sm:text-7xl font-bold bg-gradient-to-r from-cyan-500 to-teal-500 text-transparent bg-clip-text text-center z-50 pt-6 md:hidden">
+            Hello, I`m
+            Darius Baciu
           </h1>
           <Image />
-        </div>
+        </motion.div>
 
       </div>
     </div>
